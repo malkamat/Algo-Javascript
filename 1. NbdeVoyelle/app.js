@@ -1,7 +1,25 @@
 function nbDeVoyelles(txt) {
+  
+
+}
 
 
-    
+// ---------------------- ma réponse -------------- // // Réussi //
+
+function nbDeVoyelles(txt) {
+    let result = 0
+
+    let tableau = [...txt.toLowerCase()]
+        for (i = 0; i < tableau.length; i++) {
+        if (tableau[i] === "a" || tableau[i] === "e" || tableau[i] === "i" || tableau[i] === "o" || tableau[i] === "u" || tableau[i] === "y") {
+            result += 1
+
+        }
+
+    }
+
+    console.log(result)
+
 }
 
 

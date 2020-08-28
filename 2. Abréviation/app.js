@@ -1,9 +1,22 @@
 function abreviation(str) {
+    let tab = str.trim().split(" ")
+    
+    if(tab.length > 2) {
+        tab.slice(0,2)
+        console.log(tab)
+    }
 
+    if(tab.length > 1) {
+        return (`${tab[0]} ${tab[1].charAt()}.`)
+    }
+
+    else {
+        return tab[0]
+    }
 
 };
 
-console.log(abreviation("John")); // John D.
+console.log(abreviation("John Doe")); // John D.
 console.log(abreviation("Romy Schneider")); // Romy S.
 console.log(abreviation("             Alfred Hitchcock                 ")); // Alfred H.
 

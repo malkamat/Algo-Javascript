@@ -1,5 +1,9 @@
 function anagramme(strA, strB) {
 
+    const chaineClean = (str) => {
+        return str.toLowerCase().replace(/[^a-z]/g,'').split('').sort().join('')
+    }
+    return chaineClean(strA) == chaineClean(strB)
 
 }
 

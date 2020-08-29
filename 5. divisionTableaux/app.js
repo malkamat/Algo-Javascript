@@ -1,5 +1,13 @@
 function diviseTableau(tab, tailleMorceau) {
 
+    let resultat = []
+
+    for(let i = 0; i < tab.length; i += tailleMorceau) {
+        let tabSlice = tab.slice(i, i + tailleMorceau)
+        resultat.push(tabSlice)
+    }
+    
+    return resultat
 
 }
 

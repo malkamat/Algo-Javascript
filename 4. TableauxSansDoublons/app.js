@@ -9,7 +9,7 @@ function tableauxSansDoublons(...arrays) {
     })
 console.log(nvTab)
 
-return Array.from(new StereoPannerNode(nvTab))
+return Array.from(new Set(nvTab))
 }
 
     /* solution 1 * /

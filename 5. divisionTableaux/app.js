@@ -1,13 +1,22 @@
 function diviseTableau(tab, tailleMorceau) {
 
-    let resultat = []
+    // let resultat = []
 
-    for(let i = 0; i < tab.length; i += tailleMorceau) {
-        let tabSlice = tab.slice(i, i + tailleMorceau)
-        resultat.push(tabSlice)
-    }
+    // for(let i = 0; i < tab.length; i += tailleMorceau) {
+    //     let tabSlice = tab.slice(i, i + tailleMorceau)
+    //     resultat.push(tabSlice)
+    // }
     
-    return resultat
+    // return resultat
+
+    let resultat = []
+    let copyTab = [...tab]
+
+    while(copyTab.length > 0) {
+        resultat.push(copyTab.splice(0, tailleMorceau))
+    }
+
+return resultat
 
 }
 

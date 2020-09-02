@@ -20,7 +20,7 @@ function lePlusFrequent(tab){
 
         let varActuelle = tabCopy[0]
         tabCopy = tabCopy.filter(item => item !== varActuelle)
-        console.log(myObject)
+ 
 
         for(prop in myObject) {
             if(myObject[prop][1] >= plusGrand) {
@@ -35,7 +35,7 @@ function lePlusFrequent(tab){
         }
 
         if(itemPlusNombreux.length > 1) {
-            return `Les éléments : ${itemPlusNombreux[0]} et ${itemPlusNombreux[1]} sont apparues le plus souvent, pour un total de ${plusGrand} fois chacun`
+            return `Les éléments : ${itemPlusNombreux} sont apparues le plus souvent, pour un total de ${plusGrand} fois chacun`
         } else {
             return `L'élément : ${itemPlusNombreux} est apparu le plus souvent, pour un total de ${plusGrand} fois chacun`
         }

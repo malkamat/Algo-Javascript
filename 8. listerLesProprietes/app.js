@@ -1,6 +1,14 @@
 function tailleDeLobj(obj){
 
+    let longueur = 0
 
+    for(key in obj) {
+        if(obj.hasOwnProperty(key)) {
+            longueur++
+        }
+    }
+
+    return `La longueur de l'objet est de : ${longueur}`
 }
 
 console.log(tailleDeLobj({nom: 'Julia', taille: 168, age: 35})); //  

@@ -1,5 +1,7 @@
 function nettoyer(str){
 
+    let nouvelleChaine = str.replace(/[^A-Z]/gi, "")
+    return nouvelleChaine
 
     
 }

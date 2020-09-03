@@ -1,5 +1,6 @@
 function puissance(a, n) {
 
+    return Math.pow(a , n)
 
 };
 

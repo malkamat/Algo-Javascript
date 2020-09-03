@@ -1,9 +1,9 @@
 function intervalle(min, max, nb) {
 
-if (nb < max && nb > min) {
-    return true
-}
-   
+// if (nb < max && nb > min) {
+//     return true
+// }
+   return min<nb == nb<max
 };
 
 console.log(intervalle(10, 200, 35)); // true

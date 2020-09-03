@@ -1,6 +1,8 @@
 function intervalle(min, max, nb) {
 
-
+if (nb < max && nb > min) {
+    return true
+}
    
 };
 

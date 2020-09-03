@@ -1,5 +1,8 @@
 function date() {
 
+    
+    return new Date().toTimeString().slice(0,8)
+    
 
 };
 

@@ -1,5 +1,8 @@
 function premiereLettre(str){
 
+    const regex = /^[A-Z]/
+
+    return regex.test(str)
 
 }
 

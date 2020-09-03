@@ -1,5 +1,7 @@
 const entier = num => {
     
+    return (num > Number.MAX_SAFE_INTEGER || num < Number.MIN_SAFE_INTEGER ? "entier non sûr" : Math.round(num))
+
 }
    
 console.log(entier(5,565656)); // 5
